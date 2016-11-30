@@ -1,0 +1,16 @@
+{
+  "name": "reptile",
+  "version": "0.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "cheerio": "^0.22.0",
+    "hbs": "~4.0.1",
+    "async": "^1.5.0",
+    "request": "^2.74.0"
+  }
+}
