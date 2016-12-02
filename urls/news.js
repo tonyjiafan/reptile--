@@ -26,6 +26,7 @@ exports.url = function(app){
             }
           })
     },function(listData,callback){
+      console.log(listData.datas[0])
         res.render('pages/news',{
           title:'虎扑篮球新闻',
           layout:'layouts/layout',
