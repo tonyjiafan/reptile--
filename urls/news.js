@@ -3,7 +3,7 @@ const request = require('request'),
       async = require('async'),
       cheerio = require('cheerio');
 exports.url = function(app){
-  app.get('/api/news',function(req,res){
+  app.get('/news',function(req,res){
     async.waterfall([
    	function(callback){
       let basicUrl = 'http://voice.hupu.com/nba'; //虎扑新闻页面

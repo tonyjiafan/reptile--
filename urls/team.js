@@ -4,7 +4,7 @@ const request = require('request'),
       cheerio = require('cheerio');
 exports.url = function(app){
   //获取NBA球队图标
-  app.get('/api/teams',function(req,res){
+  app.get('/teams',function(req,res){
     async.waterfall([
     function(callback){
         let basicUrl = 'http://g.hupu.com/nba/teams';

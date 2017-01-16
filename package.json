@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "server.js"
+    "start": "nodemon server.js",
+    "dev": "node devServer.js && sudo nodemon server.js"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
@@ -12,5 +13,10 @@
     "hbs": "~4.0.1",
     "async": "^1.5.0",
     "request": "^2.74.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-webserver": "^0.9.1"
   }
 }
