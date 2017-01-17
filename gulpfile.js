@@ -15,9 +15,10 @@ var gulp = require('gulp'),
     // 监听任务
     gulp.task('watch', function () {
         gulp.watch('./**', function (file) {  //要监听的文件目录
+          var date = new Date();
             livereload.changed(file.path);
-            console.log("执行监听变化成功");
-        });
+            console.log(date.toLocaleTimeString() + "=>执行监听变化成功");
+        })
 
     });
 
